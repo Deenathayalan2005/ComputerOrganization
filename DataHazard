@@ -1,4 +1,17 @@
 DATA HAZARD
+In computer architecture, a data hazard is an event that occurs when the processing of an instruction depends on the result of another instruction that has not yet completed processing1. Data hazards occur when instructions that exhibit data dependence modify data in different stages of a pipeline2. Ignoring potential data hazards can result in race conditions2.
+
+There are four types of data dependencies that can lead to data hazards3:
+
+Read after Write (RAW): Also known as True dependency or Flow dependency. It occurs when the value produced by an instruction is required by a subsequent instruction3.
+Write after Read (WAR): Also known as anti-dependency. These hazards occur when the output register of an instruction is used right after read by a previous instruction3.
+Write after Write (WAW): Also known as output dependency. These hazards occur when the output register of an instruction is used for write after written by previous instruction3.
+Read after Read (RAR): It occurs when the instruction both read from the same register3. Since reading a register value does not change the register value, these Read after Read (RAR) hazards don’t cause a problem for the processor3.
+To handle these data hazards, various methods are used3:
+
+Forwarding: It adds special circuitry to the pipeline. This method works because it takes less time for the required values to travel through a wire than it does for a pipeline segment to compute its result3.
+Code reordering: We need a special type of software to reorder code. We call this type of software a hardware-dependent compiler3.
+Stall Insertion: It inserts one or more stall (no-op instructions) into the pipeline, which delays the execution of the current instruction until the required operand is written to the register file3. However, this method decreases pipeline efficiency and throughput3.
 Data hazard, it is also known as
 dependencies. It occurs in computer
 pipelines. It arises when multiple
