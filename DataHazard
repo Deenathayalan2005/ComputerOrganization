@@ -1,0 +1,58 @@
+DATA HAZARD
+Data hazard, it is also known as
+dependencies. It occurs in computer
+pipelines. It arises when multiple
+instructions are executed in different
+stages of pipelines.
+Data hazard can be resolved by
+forwarding ,stalling ,reordering instruction
+,software pipelining techniques.
+TYPES:
+There are three types of data hazard
+(i)Read after write(RAW):
+This occurs when instruction tries to
+read data before a instruction writes it.
+(ii)write after read(WAR):
+This occurs when instruction write
+to a register or memory location. It will not
+cause a problem in sequential execution, it
+could lead to incorrect behavior.
+(iii)Write after Write(WAW):
+ This occurs when two instruction
+attempt to write to the same location in
+memory.
+APPLICATIONS:
+There are various application in
+data hazard :
+ Data forwarding: This techniques
+allow the processor to forward data
+directly from output to the input
+pipeline stage.
+ Stalling : If hazard is detected the
+pipelines can be stalled until the
+hazard is resolved.
+ Compiler optimization: It can
+analyze code to rearrange
+instruction to minimize their
+impact.
+ Pipeline interlocks: It detects the
+hazard and stall the pipeline when
+necessary to prevent incorrect
+execution.
+ Embedded systems: Data hazards in
+embedded system are critical.
+Minimizing hazard can help to
+control the performance of
+embedded processor.
+RECENT TRENDS:
+(i)Speculative execution
+(ii)Advanced pipelining techniques
+ (iii)Energy efficient hazard handling
+(iv)Hazard aware programming models
+CONCLUSION:
+Data hazards are critical in modern
+processor device. It arise due to
+dependencies between instructions. By
+data hazard processor can improve
+performance , reliability and energy
+efficiently.
