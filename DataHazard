@@ -20,6 +20,8 @@ stages of pipelines.
 Data hazard can be resolved by
 forwarding ,stalling ,reordering instruction
 ,software pipelining techniques.
+
+
 TYPES:
 There are three types of data hazard
 (i)Read after write(RAW):
@@ -34,6 +36,8 @@ could lead to incorrect behavior.
  This occurs when two instruction
 attempt to write to the same location in
 memory.
+
+
 APPLICATIONS:
 There are various application in
 data hazard :
@@ -44,6 +48,8 @@ pipeline stage.
  Stalling : If hazard is detected the
 pipelines can be stalled until the
 hazard is resolved.
+
+
  Compiler optimization: It can
 analyze code to rearrange
 instruction to minimize their
@@ -57,11 +63,15 @@ embedded system are critical.
 Minimizing hazard can help to
 control the performance of
 embedded processor.
+
+
 RECENT TRENDS:
 (i)Speculative execution
 (ii)Advanced pipelining techniques
  (iii)Energy efficient hazard handling
 (iv)Hazard aware programming models
+
+
 CONCLUSION:
 Data hazards are critical in modern
 processor device. It arise due to
