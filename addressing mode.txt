@@ -30,3 +30,40 @@ to the contents of a register.
 5.Immediate mode—The operand is given explicitly in the instruction.
 	Assembler Syntax:#Value
 	Example:Add R4, R6, 200immediate
+In computer organization, addressing modes define how processors calculate the addresses of operands. Here are some common types:
+
+Immediate Mode: Operand is specified explicitly in the instruction. Used for constants and small values.
+Register Mode: Operand is in a processor register. It's fast but limited by the number of available registers.
+Direct Mode: Operand address is directly specified in the instruction. Simple but inflexible.
+Indirect Mode: Operand address is held in a register or memory location. Useful for accessing data structures.
+Indexed Mode: Address is calculated by adding an offset to a base address. Great for arrays and data structures.
+Base-Register Mode: Similar to Indexed Mode but uses a dedicated base register.
+Relative Mode: Addressing is relative to the current instruction pointer or program counter. Handy for branching and jumps.
+Stack Mode: Operands are implicitly on the stack. Common in subroutine calls and function returns.
+Each mode has its own strengths and best use cases, depending on the requirements of the program and the architecture of the processor
+
+Immediate Mode:
+In this mode, the operand is specified directly within the instruction itself.
+It's used for constants and small values that don't require memory access.
+For example, in the instruction MOV AX, 5, the value 5 is directly provided in the instruction.
+Register Mode:
+In Register Mode, the operand is in a processor register.
+It's fast because it doesn't require memory access.
+However, it's limited by the number of available registers in the processor.
+For example, in the instruction ADD AX, BX, both operands are in registers AX and BX.
+Direct Mode:
+In Direct Mode, the operand address is directly specified in the instruction.
+It's simple but inflexible because the address is fixed.
+For example, in the instruction MOV AX, [5000], the operand is located at memory address 5000.
+Indirect Mode:
+In Indirect Mode, the operand address is held in a register or memory location.
+It's useful for accessing data structures where the address of the operand may change.
+For example, in the instruction MOV AX, [BX], the address of the operand is stored in the BX register.
+Indexed Mode:
+Indexed Mode calculates the address by adding an offset to a base address.
+It's great for accessing elements of arrays and data structures.
+For example, in the instruction MOV AX, [SI+10], the base address is in the SI register, and an offset of 10 is added to it.
+Base-Register Mode:
+Similar to Indexed Mode, Base-Register Mode uses a dedicated base register.
+It allows for more flexibility by separating the base address from the offset.
+For example, in the instruction MOV AX, [BX+DI], BX is the base register and DI is the offset
